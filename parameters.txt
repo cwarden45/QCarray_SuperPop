@@ -1,0 +1,16 @@
+Parameter	Value
+GenomeStudio_FinalReport	/path/to/FinalReport.txt
+Reference_VCF	1KG_250_superpop.vcf
+Reference_PED	1KG_250_superpop.ped
+test_sample_description	sample_description.txt
+combined_sample_description	combined_sample_description.txt
+QCarray_Geno_Table	QCarray_hg19_geno_mat.txt
+Combined_VCF	combined.vcf
+Combined_Prefix	combined
+Combined_Allele_Counts	combined_allele_counts.txt
+SuperPop_Mapping	super_pop_code_mappings.txt
+Ethnicity_Assignments	overall_distance_bootstrap_assignments.txt
+ADMIXTURE_K	5
+ADMIXTURE_Min_Prop	0.2
+ADMIXTURE_Ethnicity_Assignments	ADMIXTURE_super_pop_assignments.txt
+Bootstrap_Ethnicity_Assignments	overall_distance_bootstrap_assignments.txt
