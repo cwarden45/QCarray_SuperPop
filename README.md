@@ -1,4 +1,4 @@
-# QCarray Ethnicity Assignments
+# QCarray Ethnicity Predictions
 
 Code for Predicting Ethnicity from QCarray Samples
 
