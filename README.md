@@ -24,31 +24,21 @@ The .csv manifest file can also be downloaded from this location (used to extrac
 
 For QC statistics, the Call Rate can also be exported (after being calculated, from "Samples Table"), but a call rate will also be calculated in `create_geno_mat.R`.
 
-1) `create_geno_mat.R`  This function will also create a folder with BAF/LRR values (although those are for QC figures, and are not needed for ethnicity assignments)
+1) `create_geno_mat.R`  This function will also create a folder with BAF/LRR values (although those are for QC figures, and are not needed for ethnicity assignments).  Within an R session, you can run `source("create_geno_mat.R")`. Running `Rscript create_geno_mat.R` via command line should also do the trick (just make sure your sample names don't start with numbers, or be OK with automatically adding "S" to the sample name).
 
-Within an R session, you can run `source("create_geno_mat.R")`. Running `Rscript create_geno_mat.R` via command line should also do the trick (just make sure your sample names don't start with numbers, or be OK with automatically adding "S" to the sample name).
+2) `python create_combined_vcf.py` Please note that you would need to comment the header to make standard format .vcf (this is formatted for the next script in R)
 
-2) `python create_combined_vcf.py`
-
-Please note that you would need to comment the header to make standard format .vcf (this is formatted for the next script in R)
-
-3) `vcf_to_plink.R` Assumes reference already filtered for matched probes (while plink files only needed to compare ADMIXTURE assignments, this script also creates allele count table used for bootstrap assignments)
-
-As above, enter `source("vcf_to_plink.R")` or run `Rscript vcf_to_plink.R`.
+3) `vcf_to_plink.R` Assumes reference already filtered for matched probes (while plink files only needed to compare ADMIXTURE assignments, this script also creates allele count table used for bootstrap assignments). As above, enter `source("vcf_to_plink.R")` or run `Rscript vcf_to_plink.R`.
 
 4) Run `plink --lfile $Combined_Prefix --make-bed --out $Combined_Prefix --noweb` to create binary .bed file (fill in `$Combined_Prefix` with that is used in parameter file - probably `combined`)
 
 5) Run `admixture $Combined_Prefix.bed 5 --supervised` to create .P and .Q ancestry output text files (fill in `$Combined_Prefix` with that is used in parameter file - probably `combined`.  Note .bed extension is needed this time (and K=5, since that is the number of 1000 Genomes super-populations).
 
-6) `ADMIXTURE_assignments.R`
-
-As above, enter `source("ADMIXTURE_assignments.R")` or run `Rscript ADMIXTURE_assignments.R`.
+6) `ADMIXTURE_assignments.R` As above, enter `source("ADMIXTURE_assignments.R")` or run `Rscript ADMIXTURE_assignments.R`.
 
 Optional Extra Step (if you want to compare and/or require consistent ADMIXTURE supervised assignments):
 
-S1) `bootstrap_full_distance.R`
-
-As above, enter `source("bootstrap_full_distance.R")` or run `Rscript bootstrap_full_distance.R`.
+S1) `bootstrap_full_distance.R` As above, enter `source("bootstrap_full_distance.R")` or run `Rscript bootstrap_full_distance.R`.
 
 ### Dependencies ###
 
