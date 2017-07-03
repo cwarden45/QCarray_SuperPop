@@ -1,9 +1,15 @@
 set.seed(0)
+num.sim = 1000
+
 mean.pop = function(arr, pop){
 	return(tapply(arr,pop,mean, na.rm=T))
 }
-
-num.sim = 1000
+assign.conf = function(arr){
+	min.ethnicity = arr[1]
+	counts = arr[2:length(arr)]
+	names(counts)=gsub(".bootstrap","",names(counts))
+	return(as.numeric(counts[names(counts)==min.ethnicity]))
+}
 
 param.table = read.table("parameters.txt", header=T, sep="\t")
 combined.meta.file=as.character(param.table$Value[param.table$Parameter == "combined_sample_description"]) 
@@ -70,7 +76,9 @@ EAS.bootstrap = 100 * EAS.bootstrap / num.sim
 EUR.bootstrap = 100 * EUR.bootstrap / num.sim
 SAS.bootstrap = 100 * SAS.bootstrap / num.sim
 
-write.table(data.frame(sample=names(test.alleles), min.overall.dist = min.dist,
+min.dist.conf = apply(data.frame(min.dist,AFR.bootstrap,AMR.bootstrap,EAS.bootstrap,EUR.bootstrap,SAS.bootstrap), 1, assign.conf)
+
+write.table(data.frame(sample=names(test.alleles), min.overall.dist = min.dist, min.dist.conf,
 			AFR.bootstrap=AFR.bootstrap, AMR.bootstrap=AMR.bootstrap,
 			EAS.bootstrap =EAS.bootstrap, EUR.bootstrap=EUR.bootstrap,
 			SAS.bootstrap=SAS.bootstrap),
