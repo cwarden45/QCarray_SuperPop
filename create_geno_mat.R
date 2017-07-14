@@ -92,8 +92,6 @@ for (i in 1:nrow(meta.table)){
 	chr.char[chr.char == "MT"] = "M"
 	chr.char = paste("chr",chr.char,sep="")
 	
-	sample.label = gsub("\\.","-",sample.label)
-	
 	LRR.plots[i] = paste(lrrBafFolder,"/",sample.label,"_LRR_per_chr.png",sep="")
 	png(LRR.plots[i])
 	plot(patient.mat$Chr, patient.mat$Log.R.Ratio, col=labelColors2[i],
