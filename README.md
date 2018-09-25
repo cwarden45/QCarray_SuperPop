@@ -1,5 +1,9 @@
 # QCarray Ethnicity Predictions
 
+```diff
++ This code was developed for a project within the lab of Javier Gordon Ogembo.
+```
+
 Code for Predicting Ethnicity from QCarray Samples
 
 ### Known-Ethnicity Set ###
