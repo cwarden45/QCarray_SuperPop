@@ -1,4 +1,4 @@
-# QCarray Ethnicity Predictions
+# QCarray Super-Population Predictions
 
 ```diff
 + This code was developed for a project within the lab of Javier Gordon Ogembo.
