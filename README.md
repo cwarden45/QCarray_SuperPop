@@ -71,7 +71,7 @@ ADMIXTURE: https://www.genetics.ucla.edu/software/admixture/
 |QCarray_Geno_Table|Matrix of alleles for QCarray Samples|
 |Reference_VCF|VCF file for samples with known ethnicities (see **Known-Ancestry Set** above)|
 |Reference_PED|Reference plink-format pedigree (.ped) file|
-|Combined_VCF|VCF File with matched probes for reference (known ethnicities, 1000 Genomes Omni 2.5) and test (unknown ethnicities, QC array) samples|
+|Combined_VCF|VCF File with matched probes for reference (known ancestries, 1000 Genomes Omni 2.5) and test (unknown ethnicities, QC array) samples|
 |Combined_Prefix|Prefix for other combined plink file names ([Combined_Prefix].fam, [Combined_Prefix].map, [Combined_Prefix].fam), [Combined_Prefix].lgen, [Combined_Prefix].pop)|
 |Combined_Allele_Counts|Table with numeric counts (0, 1, or 2) for reference and test samples|
 |SuperPop_Mapping|Tab-delimited text file mapping super-populations to populations (provided as `super_pop_code_mappings.txt`)|
