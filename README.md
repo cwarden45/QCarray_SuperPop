@@ -4,9 +4,9 @@
 + This code was developed for a project within the lab of Javier Gordon Ogembo.
 ```
 
-Code for Predicting Ethnicity from QCarray Samples
+Code for Predicting Super-Population Ancestry from QCarray Samples
 
-### Known-Ethnicity Set ###
+### Known-Ancestry Set ###
 
 1000 Genomes Omni2.5 SNP chip data (**ALL.chip.omni_broad_sanger_combined.20140818.snps.genotypes.vcf**) was downloaded from ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/supporting/hd_genotype_chip/
 
@@ -20,7 +20,7 @@ Scripts use a parameter file (set as `parameters.txt` in code).  Please see belo
 
 Most dependencies are available in this [Docker image](https://hub.docker.com/r/cwarden45/hpv-project/).
 
-0) Genotypes need to be defined and exported from GenomeStudio.  Please add the following columns to the FinalReport: "Allele1 - Plus", "Allele2 - Plus", "Chr", "Position", "B Allele Freq", and "Log R Ratio" (the last two used for QC plots but not strictly needed for ethnicity assignments).  In GenomeStudio 2.0, Final Reports can be exported using **Analysis --> Reports --> Report Wizard**
+0) Genotypes need to be defined and exported from GenomeStudio.  Please add the following columns to the FinalReport: "Allele1 - Plus", "Allele2 - Plus", "Chr", "Position", "B Allele Freq", and "Log R Ratio" (the last two used for QC plots but not strictly needed for super-population assignments).  In GenomeStudio 2.0, Final Reports can be exported using **Analysis --> Reports --> Report Wizard**
 
 The cluster file to define QCarray genotypes is available here: https://support.illumina.com/array/array_kits/infinium-qc-array-kit/downloads.html .
 
@@ -28,7 +28,7 @@ The .csv manifest file can also be downloaded from this location (used to extrac
 
 For QC statistics, the Call Rate can also be exported (after being calculated, from "Samples Table"), but a call rate will also be calculated in `create_geno_mat.R`.
 
-1) `create_geno_mat.R`  This function will also create a folder with BAF/LRR values (although those are for QC figures, and are not needed for ethnicity assignments).  Within an R session, you can run `source("create_geno_mat.R")`. Running `Rscript create_geno_mat.R` via command line should also do the trick (just make sure your sample names don't start with numbers, or be OK with automatically adding "S" to the sample name).
+1) `create_geno_mat.R`  This function will also create a folder with BAF/LRR values (although those are for QC figures, and are not needed for super-population assignments).  Within an R session, you can run `source("create_geno_mat.R")`. Running `Rscript create_geno_mat.R` via command line should also do the trick (just make sure your sample names don't start with numbers, or be OK with automatically adding "S" to the sample name).
 
 2) `python create_combined_vcf.py` Please note that you would need to comment the header to make standard format .vcf (the output is formatted for the next script in R)
 
@@ -69,13 +69,13 @@ ADMIXTURE: https://www.genetics.ucla.edu/software/admixture/
 |test_sample_description|Name of QC Array Sample Description File (to re-label samples with descriptive names: **SampleID** is the desired name, **SentrixBarcode_Position** is the ID in the FinalReport, which is the merging of "SentrixBarcode_A" and "SentrixPosition_A" with an underscore).  It is a set of "test" files in the sense that the 1000 Genomes samples have known ethnicities, and the code assumes the QC Array samples have unknown ethnicities.|
 |combined_sample_description|Name of Combined Description File (`test_sample_description` table with added reference sample population information)|
 |QCarray_Geno_Table|Matrix of alleles for QCarray Samples|
-|Reference_VCF|VCF file for samples with known ethnicities (see **Known-Ethnicity Set** above)|
+|Reference_VCF|VCF file for samples with known ethnicities (see **Known-Ancestry Set** above)|
 |Reference_PED|Reference plink-format pedigree (.ped) file|
 |Combined_VCF|VCF File with matched probes for reference (known ethnicities, 1000 Genomes Omni 2.5) and test (unknown ethnicities, QC array) samples|
 |Combined_Prefix|Prefix for other combined plink file names ([Combined_Prefix].fam, [Combined_Prefix].map, [Combined_Prefix].fam), [Combined_Prefix].lgen, [Combined_Prefix].pop)|
 |Combined_Allele_Counts|Table with numeric counts (0, 1, or 2) for reference and test samples|
 |SuperPop_Mapping|Tab-delimited text file mapping super-populations to populations (provided as `super_pop_code_mappings.txt`)|
-|ADMIXTURE_Ethnicity_Assignments|Table of Ethnicity Assignments made using ADMIXTURE|
+|ADMIXTURE_Ethnicity_Assignments|Table of Super-Population Assignments made using ADMIXTURE|
 |ADMIXTURE_K|Value of K used when running ADMIXTURE (number of expected groups, K=5 for super-populations)|
-|ADMIXTURE_Min_Prop|Minimum estimated proportion to report for ADMIXTURE mixed ethnicity|
-|Bootstrap_Ethnicity_Assignments|Table of Ethnicity Assignments made using bootstrap confidence for allele counts|
+|ADMIXTURE_Min_Prop|Minimum estimated proportion to report for ADMIXTURE mixed ancestry|
+|Bootstrap_Ethnicity_Assignments|Table of Super-Population Assignments made using bootstrap confidence for allele counts|
