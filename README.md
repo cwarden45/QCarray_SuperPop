@@ -66,7 +66,7 @@ ADMIXTURE: https://www.genetics.ucla.edu/software/admixture/
 | Parameter | Value|
 |---|---|
 |GenomeStudio_FinalReport|Path to FinalReport from GenomeStudio|
-|test_sample_description|Name of QC Array Sample Description File (to re-label samples with descriptive names: **SampleID** is the desired name, **SentrixBarcode_Position** is the ID in the FinalReport, which is the merging of "SentrixBarcode_A" and "SentrixPosition_A" with an underscore).  It is a set of "test" files in the sense that the 1000 Genomes samples have known ethnicities, and the code assumes the QC Array samples have unknown ethnicities.|
+|test_sample_description|Name of QC Array Sample Description File (to re-label samples with descriptive names: **SampleID** is the desired name, **SentrixBarcode_Position** is the ID in the FinalReport, which is the merging of "SentrixBarcode_A" and "SentrixPosition_A" with an underscore).  It is a set of "test" files in the sense that the 1000 Genomes samples have known ancestries, and the code assumes the QC Array samples have unknown ancestries.|
 |combined_sample_description|Name of Combined Description File (`test_sample_description` table with added reference sample population information)|
 |QCarray_Geno_Table|Matrix of alleles for QCarray Samples|
 |Reference_VCF|VCF file for samples with known ethnicities (see **Known-Ancestry Set** above)|
