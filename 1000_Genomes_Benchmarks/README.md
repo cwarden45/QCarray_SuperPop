@@ -21,9 +21,9 @@ The bootstrap simulation tended to assign more samples to each group compared to
 	<td align="center">Predicted-AFR</td>
 	<td align="center"><b>181</b></td>
 	<td align="center"><i>2</i></td>
-	<td align="center"><i>0</i></td>
-	<td align="center"><i>0</i></td>
-	<td align="center"><i>0</i></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
     </tr>
 </tbody>
 </table>
