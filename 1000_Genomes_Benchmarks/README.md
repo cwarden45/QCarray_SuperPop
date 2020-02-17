@@ -236,6 +236,53 @@ Using an additional set of 1000 Genomes samples (n=156), we tested the ability o
 ### ADMIXTURE
 #### (>80% Proportion, 73 / 156 assignments)
 
+<table>
+  <tbody>
+    <tr>
+	<th align="center"></th>
+	 <th align="center">1KG-CLM</br>(50.0% Match)</th>
+ 	 <th align="center">1KG-MXL</br>(95.8% Match)</th>
+ 	 <th align="center">1KG-PEL</br>(100.0% Match)</th>
+ 	 <th align="center">1KG-PUR</br>(0.0% Match)</th>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-AFR</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-AMR</b></td>
+	<td align="center"><b><i>2</i></b></td>
+	<td align="center"><b><i>23</i></b></td>
+	<td align="center"><b><i>43</i></b></td>
+	<td align="center"><b><i>0</i></b></td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-EAS</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-EUR</b></td>
+	<td align="center"><b>2</b></td>
+	<td align="center"><b>1</b></td>
+	<td align="center">0</td>
+	<td align="center"><b>2</b></td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-SAS</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+    </tr>
+</tbody>
+</table>
+
 ### ADMIXTURE
 #### (>50% Proportion, 134 / 156 assignments)
 
