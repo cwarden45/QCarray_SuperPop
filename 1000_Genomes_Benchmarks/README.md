@@ -62,6 +62,60 @@ The bootstrap simulation tended to assign more samples to each group compared to
 
 ### ADMIXTURE (>80% Proportion, 99.4% Match Overall, 93.2% Match AMR, 813 / 924 assignments)
 
+
+<table>
+  <tbody>
+    <tr>
+	<th align="center"></th>
+	<th align="center">1KG-AFR</th>
+  <th align="center">1KG-AMR</th>
+  <th align="center">1KG-EAS</th>
+  <th align="center">1KG-EUR</th>
+  <th align="center">1KG-SAS</th>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-AFR</b></td>
+	<td align="center"><b>166</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-AMR</b></td>
+	<td align="center">0</td>
+	<td align="center"><b>68</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-EAS</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center"><b>266</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-EUR</b></td>
+	<td align="center">0</td>
+	<td align="center"><i>5</i></td>
+	<td align="center">0</td>
+	<td align="center"><b>274</b></td>
+	<td align="center">0</td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-SAS</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	 <td align="center">0</td>
+	<td align="center"><b>34</b></td>
+    </tr>
+</tbody>
+</table>
+
 ### ADMIXTURE (>50% Proportion, 95.6% Match Overall, 70.1% Match AMR, 902 / 924 assignments)
 
 1KG = 1000 Genomes ethnicity assignment. Only QC-array matched probes used for assignments.
