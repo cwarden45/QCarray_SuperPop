@@ -7,6 +7,27 @@ The bootstrap simulation tended to assign more samples to each group compared to
 
 ### Bootstrap Simulation (>95% Confidence, 98.4% Match Overall, 89.8% Match AMR, 915 / 924 assignments)
 
+<table>
+  <tbody>
+    <tr>
+	<th align="center"></th>
+	<th align="center">1KG-AFR</th>
+  <th align="center">1KG-AMR</th>
+  <th align="center">1KG-EAS</th>
+  <th align="center">1KG-EUR</th>
+  <th align="center">1KG-SAS</th>
+    </tr>
+    <tr>
+	<td align="center">Predicted-AFR</td>
+	<td align="center"><b>181</b></td>
+	<td align="center"><i>2</i></td>
+	<td align="center"><i>0</i></td>
+	<td align="center"><i>0</i></td>
+	<td align="center"><i>0</i></td>
+    </tr>
+</tbody>
+</table>
+
 ### ADMIXTURE (>80% Proportion, 99.4% Match Overall, 93.2% Match AMR, 813 / 924 assignments)
 
 ### ADMIXTURE (>50% Proportion, 95.6% Match Overall, 70.1% Match AMR, 902 / 924 assignments)
