@@ -118,6 +118,59 @@ The bootstrap simulation tended to assign more samples to each group compared to
 
 ### ADMIXTURE (>50% Proportion, 95.6% Match Overall, 70.1% Match AMR, 902 / 924 assignments)
 
+<table>
+  <tbody>
+    <tr>
+	<th align="center"></th>
+	<th align="center">1KG-AFR</th>
+  	<th align="center">1KG-AMR</th>
+ 	 <th align="center">1KG-EAS</th>
+ 	 <th align="center">1KG-EUR</th>
+ 	 <th align="center">1KG-SAS</th>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-AFR</b></td>
+	<td align="center"><b>181</b></td>
+	<td align="center"><i>2</i></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-AMR</b></td>
+	<td align="center">0</td>
+	<td align="center"><b>94</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-EAS</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center"><b>267</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-EUR</b></td>
+	<td align="center">0</td>
+	<td align="center"><i>38</i></td>
+	<td align="center">0</td>
+	<td align="center"><b>283</b></td>
+	<td align="center">0</td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-SAS</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	 <td align="center">0</td>
+	<td align="center"><b>37</b></td>
+    </tr>
+</tbody>
+</table>
+
 1KG = 1000 Genomes ethnicity assignment. Only QC-array matched probes used for assignments.
 
 **Also, please notice that this is different than the two ADMIXTURE proportions reported in the HPV L1 Amplicon-Sequencing paper (80% and 50%, versus 80% and 20%).**  The reason is that these are supposed to be relatively homogenous populations, while we can encounter individuals with more mixed ancestry in the patient population.
