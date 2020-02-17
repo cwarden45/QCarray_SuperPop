@@ -286,6 +286,52 @@ Using an additional set of 1000 Genomes samples (n=156), we tested the ability o
 ### ADMIXTURE
 #### (>50% Proportion, 134 / 156 assignments)
 
+<table>
+  <tbody>
+    <tr>
+	<th align="center"></th>
+	 <th align="center">1KG-CLM</br>(65.7% Match)</th>
+ 	 <th align="center">1KG-MXL</br>(87.5% Match)</th>
+ 	 <th align="center">1KG-PEL</br>(100.0% Match)</th>
+ 	 <th align="center">1KG-PUR</br>(4.0% Match)</th>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-AFR</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center"><b>2</b></td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-AMR</b></td>
+	<td align="center"><b><i>22</i></b></td>
+	<td align="center"><b><i>28</i></b></td>
+	<td align="center"><b><i>43</i></b></td>
+	<td align="center"><b><i>1</i></b></td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-EAS</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-EUR</b></td>
+	<td align="center"><b>12</b></td>
+	<td align="center"><b>4</b></td>
+	<td align="center">0</td>
+	<td align="center"><b>22</b></td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-SAS</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+    </tr>
+</tbody>
+</table>
 
 1KG = 1000 Genomes ethnicity assignment. Match = concordance defined at super-population level.  Only QC-array matched probes used for assignments.
 
