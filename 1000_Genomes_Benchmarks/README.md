@@ -20,7 +20,7 @@ The bootstrap simulation tended to assign more samples to each group compared to
     <tr>
 	<td align="center"><b>Predicted-AFR</b></td>
 	<td align="center"><b>181</b></td>
-	<td align="center"><i>2</i></td>
+	<td align="center"><b><i>2</i></b></td>
 	<td align="center">0</td>
 	<td align="center">0</td>
 	<td align="center">0</td>
@@ -44,7 +44,7 @@ The bootstrap simulation tended to assign more samples to each group compared to
     <tr>
 	<td align="center"><b>Predicted-EUR</b></td>
 	<td align="center">0</td>
-	<td align="center"><i>13</i></td>
+	<td align="center"><b><i>13</i></b></td>
 	<td align="center">0</td>
 	<td align="center"><b>283</b></td>
 	<td align="center">0</td>
@@ -100,7 +100,7 @@ The bootstrap simulation tended to assign more samples to each group compared to
     <tr>
 	<td align="center"><b>Predicted-EUR</b></td>
 	<td align="center">0</td>
-	<td align="center"><i>5</i></td>
+	<td align="center"><b><i>5</i></b></td>
 	<td align="center">0</td>
 	<td align="center"><b>274</b></td>
 	<td align="center">0</td>
@@ -131,7 +131,7 @@ The bootstrap simulation tended to assign more samples to each group compared to
     <tr>
 	<td align="center"><b>Predicted-AFR</b></td>
 	<td align="center"><b>181</b></td>
-	<td align="center"><i>2</i></td>
+	<td align="center"><b><i>2</i></b></td>
 	<td align="center">0</td>
 	<td align="center">0</td>
 	<td align="center">0</td>
@@ -155,7 +155,7 @@ The bootstrap simulation tended to assign more samples to each group compared to
     <tr>
 	<td align="center"><b>Predicted-EUR</b></td>
 	<td align="center">0</td>
-	<td align="center"><i>38</i></td>
+	<td align="center"><b><i>38</i></b></td>
 	<td align="center">0</td>
 	<td align="center"><b>283</b></td>
 	<td align="center">0</td>
