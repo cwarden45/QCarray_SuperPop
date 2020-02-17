@@ -182,6 +182,25 @@ Using an additional set of 1000 Genomes samples (n=156), we tested the ability o
 
 ### Bootstrap Simulation (>95% Confidence, 147 / 156 assignments)
 
+<table>
+  <tbody>
+    <tr>
+	<th align="center"></th>
+	 <th align="center">1KG-CLM</br>(85.7% Match)</th>
+ 	 <th align="center">1KG-MXL</br>(97.9% Match)</th>
+ 	 <th align="center">1KG-PEL</br>(100.0% Match)</th>
+ 	 <th align="center">1KG-PUR</br>(72.4% Match)</th>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-AFR</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center"><b>2</b></td>
+    </tr>
+</tbody>
+</table>
+
 ### ADMIXTURE (>80% Proportion, 73 / 156 assignments)
 
 ### ADMIXTURE (>50% Proportion, 134 / 156 assignments)
