@@ -18,12 +18,44 @@ The bootstrap simulation tended to assign more samples to each group compared to
   <th align="center">1KG-SAS</th>
     </tr>
     <tr>
-	<td align="center">Predicted-AFR</td>
+	<td align="center"><b>Predicted-AFR</b></td>
 	<td align="center"><b>181</b></td>
 	<td align="center"><i>2</i></td>
 	<td align="center">0</td>
 	<td align="center">0</td>
 	<td align="center">0</td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-AMR</b></td>
+	<td align="center">0</td>
+	<td align="center"><b>132</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-EAS</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center"><b>267</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-EUR</b></td>
+	<td align="center">0</td>
+	<td align="center"><i>13</i></td>
+	<td align="center">0</td>
+	<td align="center"><b>283</b></td>
+	<td align="center">0</td>
+    </tr>
+    <tr>
+	<td align="center"><b>Predicted-SAS</b></td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	<td align="center">0</td>
+	 <td align="center">0</td>
+	<td align="center"><b>37</b></td>
     </tr>
 </tbody>
 </table>
