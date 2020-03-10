@@ -336,3 +336,19 @@ Using an additional set of 1000 Genomes samples (n=156), we tested the ability o
 1KG = 1000 Genomes ethnicity assignment. Match = concordance defined at super-population level.  Only QC-array matched probes used for assignments.
 
 **Also, please notice that this is different than the two ADMIXTURE proportions reported in the HPV L1 Amplicon-Sequencing paper (80% and 50%, versus 50% and 20%).**  The reason is that these are supposed to be relatively homogenous populations, while we can encounter individuals with more mixed ancestry in the patient population.
+
+
+Visualizing Super-Population Clustering Using PCA Plots
+-----------------
+
+Please note that this is not how the ancestry assignments are being made.  However, it may be helpful in getting an overall sense of robustness of the results.
+
+![Super-Population PCA 1-3](PC1-to-PC3.png "Super-Population PCA 1-3")
+
+*Caption for Above Plot*: Super-population clusters of select 1000 Genomes reference samples and ICC samples with QC Array call rates >85%, plotted against the first three principal components. 1000 Genomes individuals from current African (AFR) populations   and QC Array samples from City of Hope patients that we expect have African ancestry were most clearly distinguished by the first two principal components. 1000 Genomes individuals from current European (EUR) and East Asian (EAS) populations were separated along the third and, to a lesser extent, the second principal components. 
+
+Slease note that principal components are ordered by the amount of variance explained.  This matches divergence for those of African ancestry on the 1st and 2nd principal components.
+
+![Super-Population PCA 3-4](PC3_PC4.png "Super-Population PCA 3-4")
+
+*Caption for Above Plot*: Similar to earlier plot, with data plotted along the third and fourth principal components. Ad-Mixed American (AMR) individuals are  more distinct along the fourth principal component. Although these principal components are not the primary method for assigning ethnicities (and AMR is not completely interchangeable with Hispanic ethnicity), they provide an effective way to visualize variation among samples.  
