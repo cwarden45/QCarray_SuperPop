@@ -348,13 +348,13 @@ We used samples with higher call rates for probes that were also present on the 
 Visualizing Super-Population Clustering Using PCA Plots
 -----------------
 
-*Please note that this is not how the ancestry assignments are being made.*  However, it may be helpful in getting an overall sense of robustness of the results.
+***Please note that this is not how the ancestry assignments are being made.***  However, it may be helpful in getting an overall sense of robustness of the results.
 
 ![Super-Population PCA 1-3](PC1-to-PC3.png "Super-Population PCA 1-3")
 
 *Caption for Above Plot*: Super-population clusters of select 1000 Genomes reference samples and ICC samples with QC Array call rates >85%, plotted against the first three principal components. 1000 Genomes individuals from current African (AFR) populations   and QC Array samples from City of Hope patients that we expect have African ancestry were most clearly distinguished by the first two principal components. 1000 Genomes individuals from current European (EUR) and East Asian (EAS) populations were separated along the third and, to a lesser extent, the second principal components. 
 
-Slease note that principal components are ordered by the amount of variance explained.  This matches divergence for those of African ancestry on the 1st and 2nd principal components.
+The principal components are ordered by the amount of variance explained.  This matches divergence for those of African ancestry on the 1st and 2nd principal components.
 
 ![Super-Population PCA 3-4](PC3_PC4.png "Super-Population PCA 3-4")
 
