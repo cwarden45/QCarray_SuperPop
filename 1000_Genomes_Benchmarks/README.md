@@ -343,12 +343,12 @@ There is currently another studie that uses the QC Array along with 1000 Genomes
 
 A set of 50 unrelated 1000 Genomes samples per super-population (for a reference set of 250 samples) were used to assign clusters using the ADMIXTURE program and calculate confidence values for a distance-based strategy using a separate bootstrap simulation. Unrelated individuals were defined as those without parents in the 1000 Genomes project (thus, we excluded children from trios); individuals with siblings, second-order relatives, or third-order relatives were also removed from the reference set.
 
-We used samples with higher call rates for probes that were also present on the QC Array (≥95%, n=766) for training, and samples with lower call rates (<95%, n=924) for validation.  We choose this strategy because call rates for the Omni 2.5M chip are higher than the call rates observed for our QC Array samples (especially given that they were archived rather than fresh).  Tables with these results are available in the “1000_Genomes Benchmarks” folder within the above link.
+We used samples with higher call rates for probes that were also present on the QC Array (≥95%, n=766) for training, and samples with lower call rates (<95%, n=924) for validation.  We choose this strategy because call rates for the Omni 2.5M chip are higher than the call rates observed for our QC Array samples (especially given that they were archived rather than fresh).  This is shown in the tables above.
 
 Visualizing Super-Population Clustering Using PCA Plots
 -----------------
 
-Please note that this is not how the ancestry assignments are being made.  However, it may be helpful in getting an overall sense of robustness of the results.
+*Please note that this is not how the ancestry assignments are being made.*  However, it may be helpful in getting an overall sense of robustness of the results.
 
 ![Super-Population PCA 1-3](PC1-to-PC3.png "Super-Population PCA 1-3")
 
