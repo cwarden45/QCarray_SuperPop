@@ -337,6 +337,13 @@ Using an additional set of 1000 Genomes samples (n=156), we tested the ability o
 
 **Also, please notice that this is different than the two ADMIXTURE proportions reported in the HPV L1 Amplicon-Sequencing paper (80% and 50%, versus 50% and 20%).**  The reason is that these are supposed to be relatively homogenous populations, while we can encounter individuals with more mixed ancestry in the patient population.
 
+Methods
+-----------------
+There is currently another studie that uses the QC Array along with 1000 Genomes Project [The 1000 Genomes Project Consortium, 2015](https://www.nature.com/articles/nature15393) data to make ancestry assignments [Ponomarenko et al. 2017](https://bmcmedgenomics.biomedcentral.com/articles/10.1186/s12920-017-0297-7), but we use a different strategy in this publication.  More specifically, we assigned samples with QC Array to super-populations if they had consistent results using ADMIXTURE (>20% ancestry assignment, [Alexander et al. 2009](https://www.ncbi.nlm.nih.gov/pubmed/19648217))  as well as using distance to median allele counts per reference set (with >95% confidence, from 1000 bootstrap simulations). ADMIXTURE was run in supervised mode with K (the parameter for number of clusters, matching the number of super-populations) = 5. 
+
+A set of 50 unrelated 1000 Genomes samples per super-population (for a reference set of 250 samples) were used to assign clusters using the ADMIXTURE program and calculate confidence values for a distance-based strategy using a separate bootstrap simulation. Unrelated individuals were defined as those without parents in the 1000 Genomes project (thus, we excluded children from trios); individuals with siblings, second-order relatives, or third-order relatives were also removed from the reference set.
+
+We used samples with higher call rates for probes that were also present on the QC Array (≥95%, n=766) for training, and samples with lower call rates (<95%, n=924) for validation.  We choose this strategy because call rates for the Omni 2.5M chip are higher than the call rates observed for our QC Array samples (especially given that they were archived rather than fresh).  Tables with these results are available in the “1000_Genomes Benchmarks” folder within the above link.
 
 Visualizing Super-Population Clustering Using PCA Plots
 -----------------
