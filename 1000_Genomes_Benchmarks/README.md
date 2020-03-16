@@ -1,3 +1,7 @@
+We used the Illumina Human Omni 2.5M genotyping chip from the 1000 Genomes Project data, which shares 10,422 matched probes with the QC Array, for making ancestry predictions for the following current super-populations: African (AFR), East Asian (EAS), European (EUR), South Asian (SAS), and Ad-Mixed American (AMR).
+
+Based upon 1000 Genomes Project data from individuals of Mexican (from Los Angeles), Peruvian, Colombian, and Puerto Rican populations, we expected that the AMR assignments should be enriched for Hispanic individuals.  However, we do not consider AMR to be completely interchangeable with “Hispanic” ethnicity in independent cohorts. For example, the reference populations did not recover the different AMR populations equally well.  Nevertheless, we hope that requiring confirmation using two independent strategies should help filter ambiguous/mixed individuals. 
+
 Please note that the code is written as if it was part of the "[Extra_Analysis](https://github.com/cwarden45/HPV_type_paper-archived_samples/tree/master/Downstream_R_Code/Extra_Analysis)" subfolder on the L1 Amplicon-Sequencing GitHub page.  For example, this would be similar to the "[Ancestry_Analysis](https://github.com/cwarden45/HPV_type_paper-archived_samples/tree/master/Downstream_R_Code/Extra_Analysis/Ancestry_Analysis)" subfolder on that page.
 
 Lower Call Rate (<95%) Validation of Super-Populations for 1000 Genomes Samples
