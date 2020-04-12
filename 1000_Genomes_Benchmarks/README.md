@@ -10,7 +10,7 @@ Lower Call Rate (<95%) Validation of Super-Populations for 1000 Genomes Samples
 The bootstrap simulation tended to assign more samples to each group compared to ADMIXTURE (configured to assign super-populations based on contributions greater than 50% or 80%). The bootstrap simulation also showed a potential advantage in recovering AMR assignments in the validation set: 
 
 ### Bootstrap Simulation
-#### (>95% Confidence, 98.4% Match Overall, 89.8% Match AMR, 915 / 924 assignments)
+#### (>95% Confidence, 98.4% Match Overall, *89.8% Match AMR*, 915 / 924 assignments)
 
 <table>
   <tbody>
@@ -66,7 +66,7 @@ The bootstrap simulation tended to assign more samples to each group compared to
 </table>
 
 ### ADMIXTURE
-#### (>80% Proportion, 99.4% Match Overall, 93.2% Match AMR, 813 / 924 assignments)
+#### (>80% Proportion, 99.4% Match Overall, *93.2% Match AMR*, 813 / 924 assignments)
 
 
 <table>
@@ -123,7 +123,7 @@ The bootstrap simulation tended to assign more samples to each group compared to
 </table>
 
 ### ADMIXTURE
-#### (>50% Proportion, 95.6% Match Overall, 70.1% Match AMR, 902 / 924 assignments)
+#### (>50% Proportion, 95.6% Match Overall, *70.1% Match AMR*, 902 / 924 assignments)
 
 <table>
   <tbody>
