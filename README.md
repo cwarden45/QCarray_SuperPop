@@ -9,7 +9,7 @@ Code for Predicting Super-Population Ancestry from QCarray Samples
 If you use this code. please note:
 
  - Please be mindful and respectiful of a patient's choice to declare a race / ethnicity.
- - There is a [noticable drop](https://github.com/cwarden45/QCarray_SuperPop/tree/master/1000_Genomes_Benchmarks) in performance for certain populations within the Admixed American (AMR) super-population.  So, an AMR assignment is not interchangeable with a self-reported status of Hispanic ethnicity (where we expect a non-trivial number of AMR, EUR, and AMR/EUR assignments). 
+ - There is a [noticable drop](https://github.com/cwarden45/QCarray_SuperPop/tree/master/1000_Genomes_Benchmarks) in performance for certain populations within the Admixed American (AMR) super-population.  So, an AMR assignment is not interchangeable with a self-reported status of Hispanic ethnicity (where we expect a non-trivial number of AMR, EUR, and AMR/EUR assignments, and/or a lack of assignment with a requirement of consistent bootstrap and ADMIXTURE strategies). 
 
 ### Known-Ancestry Set ###
 
