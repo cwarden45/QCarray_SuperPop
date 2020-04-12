@@ -180,7 +180,7 @@ The bootstrap simulation tended to assign more samples to each group compared to
 
 1KG = 1000 Genomes ethnicity assignment. Only QC-array matched probes used for assignments.
 
-**Please note that the sum of the assignment varies because individuals that don't meet the assignment criteria are excluded.**  This may be more clear in the following section.
+**Please note that the sum of the assignment varies because individuals that don't meet the assignment criteria are excluded.**  This may be more clear in the following section, where the total AMR assignments varies between 73 / 156 for 80% ADMIXTURE to 147 / 156 for the bootstrap assignments.
 
 **Also, please notice that this is different than the two ADMIXTURE proportions reported in the HPV L1 Amplicon-Sequencing paper (80% and 50%, versus 50% and 20%).**  The reason is that these are supposed to be relatively homogenous populations, while we can encounter individuals with more mixed ancestry in the patient population.
 
