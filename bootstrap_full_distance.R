@@ -14,7 +14,7 @@ assign.conf = function(arr){
 param.table = read.table("parameters.txt", header=T, sep="\t")
 combined.meta.file=as.character(param.table$Value[param.table$Parameter == "combined_sample_description"]) 
 allele.count.table=as.character(param.table$Value[param.table$Parameter == "Combined_Allele_Counts"])
-output.file=as.character(param.table$Value[param.table$Parameter == "Bootstrap_Ethnicity_Assignments"])
+output.file=as.character(param.table$Value[param.table$Parameter == "Bootstrap_SuperPop_Assignments"])
 
 allele.mat = read.table(allele.count.table, head=T, sep="\t")
 snpIDs = allele.mat[,1]
