@@ -80,7 +80,7 @@ ADMIXTURE: https://www.genetics.ucla.edu/software/admixture/
 |Combined_Prefix|Prefix for other combined plink file names ([Combined_Prefix].fam, [Combined_Prefix].map, [Combined_Prefix].fam), [Combined_Prefix].lgen, [Combined_Prefix].pop)|
 |Combined_Allele_Counts|Table with numeric counts (0, 1, or 2) for reference and test samples|
 |SuperPop_Mapping|Tab-delimited text file mapping super-populations to populations (provided as `super_pop_code_mappings.txt`)|
-|ADMIXTURE_Ethnicity_Assignments|Table of Super-Population Assignments made using ADMIXTURE|
+|ADMIXTURE_SuperPop_Assignments|Table of Super-Population Assignments made using ADMIXTURE|
 |ADMIXTURE_K|Value of K used when running ADMIXTURE (number of expected groups, K=5 for super-populations)|
 |ADMIXTURE_Min_Prop|Minimum estimated proportion to report for ADMIXTURE mixed ancestry|
-|Bootstrap_Ethnicity_Assignments|Table of Super-Population Assignments made using bootstrap confidence for allele counts|
+|Bootstrap_SuperPop_Assignments|Table of Super-Population Assignments made using bootstrap confidence for allele counts|
