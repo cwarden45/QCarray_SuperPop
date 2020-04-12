@@ -6,6 +6,11 @@
 
 Code for Predicting Super-Population Ancestry from QCarray Samples
 
+If you use this code. please note:
+
+ - Please be mindful and respectiful of a patient's choice to declare a race / ethnicity.
+ - There is a [noticable drop](https://github.com/cwarden45/QCarray_SuperPop/tree/master/1000_Genomes_Benchmarks) in performance for certain populations within the Admixed American (AMR) super-population.  So, an AMR assignment is not interchangeable with a self-reported status of Hispanic ethnicity (where we expect a non-trivial number of AMR, EUR, and AMR/EUR assignments). 
+
 ### Known-Ancestry Set ###
 
 1000 Genomes Omni2.5 SNP chip data (**ALL.chip.omni_broad_sanger_combined.20140818.snps.genotypes.vcf**) was downloaded from ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/supporting/hd_genotype_chip/
