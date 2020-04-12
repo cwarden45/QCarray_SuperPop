@@ -1,7 +1,7 @@
 param.table = read.table("parameters.txt", header=T, sep="\t")
 combined.meta.file=as.character(param.table$Value[param.table$Parameter == "combined_sample_description"]) 
 plink.prefix=as.character(param.table$Value[param.table$Parameter == "Combined_Prefix"])
-output.file=as.character(param.table$Value[param.table$Parameter == "ADMIXTURE_Ethnicity_Assignments"]) 
+output.file=as.character(param.table$Value[param.table$Parameter == "ADMIXTURE_SuperPop_Assignments"]) 
 K=as.numeric(as.character(param.table$Value[param.table$Parameter == "ADMIXTURE_K"]))
 min.freq=as.numeric(as.character(param.table$Value[param.table$Parameter == "ADMIXTURE_Min_Prop"]))
 
