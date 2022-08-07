@@ -51,6 +51,7 @@ pop.freq = apply(admixture.assignment.table, 2, mean.pop, pop = pop.code)
 #write.table(pop.freq, "ADMIXTURE_super_pop_means.txt",sep="\t", quote=F)
 
 #validation set
+#NOTE: Filtering for the "NA" values below is how only the lower call rate samples are selected.
 output.table = output.table[is.na(output.table$used.pop.code),]
 
 final.assignments = output.table$admixture.assignment
