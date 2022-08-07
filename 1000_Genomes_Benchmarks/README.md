@@ -358,7 +358,7 @@ Visualizing Super-Population Clustering Using PCA Plots
 
 ![Super-Population PCA 1-3](PC1-to-PC3.png "Super-Population PCA 1-3")
 
-*Caption for Above Plot*: Super-population clusters of select 1000 Genomes reference samples and ICC samples with QC Array call rates >85%, plotted against the first three principal components. 1000 Genomes individuals from current African (AFR) populations   and QC Array samples from City of Hope patients that we expect have African ancestry were most clearly distinguished by the first two principal components. 1000 Genomes individuals from current European (EUR) and East Asian (EAS) populations were separated along the third and, to a lesser extent, the second principal components. 
+*Caption for Above Plot*: Super-population clusters of select 1000 Genomes reference samples and ICC samples with QC Array call rates >85%, plotted against the first three principal components. *Please note that this call rate threshold (85%) is different than the treshold used for the 1000 Genomes analysis described above (less than 95% for the test set).*  1000 Genomes individuals from current African (AFR) populations and QC Array samples from City of Hope patients that we expect have African ancestry were most clearly distinguished by the first two principal components. 1000 Genomes individuals from current European (EUR) and East Asian (EAS) populations were separated along the third and, to a lesser extent, the second principal components. 
 
 The principal components are ordered by the amount of variance explained.  This matches divergence for those of African ancestry on the 1st and 2nd principal components.
 
