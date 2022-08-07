@@ -51,6 +51,7 @@ output.table = data.frame(Sample=boot.assignment.table$sample,
 #			sep="\t", quote=F, row.names=F)
 
 #validation set
+#NOTE: upstream of this script, the input file is already filtered to only consider the lower call rate samples.
 final.assignments = output.table$bootstrap.assignment
 final.assignments[bootstrap.confidence < min.conf]=NA
 known.super.pop = output.table$assigned.super.pop
